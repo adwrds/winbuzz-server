@@ -32,7 +32,7 @@ const Data = new mongoose.model('data', schema);
 
 
 app.get("/",(req,res)=>{
-res.send(<h1>Server is working...</h1>)
+res.send("<h1>Server is working...</h1>")
 });
 
 app.post('/save-data', async (req, res) => {
