@@ -30,6 +30,11 @@ const schema = new mongoose.Schema({
 
 const Data = new mongoose.model('data', schema);
 
+
+app.get("/",(req,res)=>{
+res.send(<h1>Server is working...</h1>)
+});
+
 app.post('/save-data', async (req, res) => {
     console.log("Item to create: ", req.body);
     try {
